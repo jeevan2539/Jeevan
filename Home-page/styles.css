@@ -1,0 +1,3453 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    gap: 60px;
+    align-items: center;    
+    justify-content: flex-end;
+    padding-left: 70px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+nav a:hover{
+    color: rgb(15, 159, 102);
+}
+
+.logo{
+    padding-left: 90px;
+}
+
+.favourite img{
+    height: 19px;
+    width: 22px;
+}
+
+.cart img{
+    height: 19px;
+    width: 22px;
+}
+
+
+.search-bar{
+    position: relative;
+    right: 30px;
+    display: flex;
+    height: 40%;    
+    border: 1px solid lightgray;
+
+}
+
+.search-bar .image{
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+.search-bar input{
+    width: 300px;
+    border: none;
+}
+
+.favourite{
+    position: relative;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+
+.favourite .fav-three{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(15, 159, 102);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.favourite .fav-three p{
+    margin: 0px;
+    font-size: x-small;
+    color: white;
+    padding: 15px;
+}
+
+.cart{
+    position: relative;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+
+.cart .cart-three{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(15, 159, 102);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.cart .cart-three p{
+    margin: 0px;
+    font-size: x-small;
+    color: white;
+    padding: 15px;
+}
+
+
+.promotion-card{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.promotion-card .headings{
+    padding-left: 50px;
+}
+
+.promotion-card .headings h4{
+    color: rgb(183, 182, 182);
+    font-size:large;
+}
+
+.promotion-card .headings #line-one{
+    font-size:xxx-large;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.promotion-card .headings #line-two{
+    font-size: 70px;
+    color: rgb(15, 159, 102);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.promotion-card .headings p{
+    font-size:large;
+    color: rgb(132, 130, 130);
+    margin-top: 0px;
+}
+
+.promotion-card .headings #p-1{
+    margin-bottom: 0px;
+}
+
+.promotion-card .promotion-img{
+    padding-right: 50px;
+}
+
+.promotion-card button{
+    padding: 10px;
+    background-color: rgb(15, 159, 102);
+    border: none;
+    color: white;
+}
+
+.promotion-card button:hover{
+    color: rgb(15, 159, 102);
+    background-color: rgb(221, 214, 214);
+}
+
+.banner-img{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin:auto;
+}
+
+.banner-img .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    width: 100%;
+    height: 100px;
+}
+
+.banner-img .heading h3{
+    font-size:x-large;
+}
+
+.banner-img .heading #first-word{
+    color: rgb(15, 159, 102);
+    font-size: xx-large;
+}
+
+.banner-img .heading .buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.banner-img .heading .buttons button{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 40%;
+    border: 1px solid rgb(15, 159, 102);
+    background-color: rgb(236, 234, 234);
+    color: rgb(15, 159, 102);
+}
+
+.banner-img .items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.items .T-shirt{
+    width: 200px;
+    height: 230px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items .T-shirt img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 190px;
+    height: 190px;
+}
+
+.items .T-shirt p{
+    color: rgb(102, 100, 100);
+}
+
+.items .Bags{
+    width: 200px;
+    height: 230px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items .Bags img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 190px;
+    height: 190px;
+}
+
+.items .Bags p{
+
+    color: rgb(102,100,100);
+}
+    
+
+.items .Sandal{
+    width: 200px;
+    height: 230px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items .Sandal img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 190px;
+    height: 190px;
+}
+
+.items .Sandal p{
+    color: rgb(102,100,100);
+}
+
+.items .Scarf-Cap{
+    width: 200px;
+    height: 230px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items .Scarf-Cap  img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 190px;
+    height: 190px;
+}
+
+.items .Scarf-Cap p{
+    color: rgb(102,100,100);
+}
+
+.items .Shoes{
+    width: 200px;
+    height: 230px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items .Shoes img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 190px;
+    height: 190px;
+}
+
+.items .Shoes p{
+    color: rgb(102,100,100);
+}
+
+section{
+    width: 85%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .featured-buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+section .featured-buttons button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+section .featured-buttons button:hover{
+    background-color: peachpuff;
+    color: rgb(15, 159, 102);
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products .one{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 40px;
+}
+
+.products .one .shirt-one{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .one .shirt-one .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(230, 101, 123);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .one .shirt-one .image-container{
+    perspective: 1000px;
+}
+
+.products .one .shirt-one .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .one .shirt-one .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-one .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-one .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-one .front,.back{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+} 
+
+.products .one .shirt-one .front{
+    z-index: 2;
+}
+
+.products .one .shirt-one .back{
+    transform: rotateY(180deg);
+    
+}
+
+.products .one .shirt-one .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .one .shirt-one .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .one .shirt-one .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .one .shirt-one .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+
+.products .one .shirt-one .info-1{
+    display: flex;
+}
+
+.products .one .shirt-one .info-1 .details-1{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .one .shirt-one .info-1 .details-1 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .one .shirt-one .info-1 .details-1 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .one .shirt-one .info-1 .details-1 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .one .shirt-one .info-1 .details-1 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .one .shirt-one .info-1 .details-1 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .one .shirt-one .info-1 .details-1 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .one .shirt-one .info-1 .shop-button-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .one .shirt-one .info-1 .shop-button-1 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .one .shirt-two{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .one .shirt-two .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(15, 159, 102);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .one .shirt-two .image-container{
+    perspective: 1000px;
+}
+
+.products .one .shirt-two .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .one .shirt-two .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-two .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-two .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-two .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .one .shirt-two .front{
+    z-index: 2;
+}
+
+.products .one .shirt-two .back{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-two .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .one .shirt-two .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .one .shirt-two .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .one .shirt-two .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .one .shirt-two .info-2{
+    display: flex;
+}
+
+.products .one .info-2 .details-2{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .one .shirt-two .info-2 .details-2 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .one .shirt-two .info-2 .details-2 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .one .shirt-two .info-2 .details-2 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .one .shirt-two .info-2 .details-2 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .one .shirt-two .info-2 .details-2 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .one .shirt-two .info-2 .details-2 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .one .shirt-two .info-2 .shop-button-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .one .shirt-two .info-2 .shop-button-2 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+
+.products .one .shirt-three{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .one .shirt-three .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(233, 189, 150);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .one .shirt-three .image-container{
+    perspective: 1000px;
+}
+
+.products .one .shirt-three .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .one .shirt-three .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-three .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-three .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-three .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .one .shirt-three .front{
+    z-index: 2;
+}
+
+.products .one .shirt-three .back{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-three .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .one .shirt-three .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .one .shirt-three .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .one .shirt-three .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .one .shirt-three .info-3{
+    display: flex;
+}
+
+.products .one .shirt-three .info-3 .details-3{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .one  .shirt-three .info-3 .details-3 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .one .shirt-three .info-3 .details-3 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .one .shirt-three .info-3 .details-3 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .one .shirt-three .info-3 .details-3 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .one .shirt-three .info-3 .details-3 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .one .shirt-three .info-3 .details-3 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .one .shirt-three .info-3 .shop-button-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .one .shirt-three .info-3 .shop-button-3 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .two{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 40px;
+}
+
+.products .two .shirt-one{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .two .shirt-one .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(230, 101, 123);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .two .shirt-one .image-container{
+    perspective: 1000px;
+}
+
+.products .two .shirt-one .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .two .shirt-one .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-one .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-one .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-one .front,.back{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+} 
+
+.products .two .shirt-one .front{
+    z-index: 2;
+}
+
+.products .two .shirt-one .back{
+    transform: rotateY(180deg);
+    
+}
+
+.products .two .shirt-one .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .two .shirt-one .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .two .shirt-one .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .two .shirt-one .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+
+.products .two .shirt-one .info-1{
+    display: flex;
+}
+
+.products .two .shirt-one .info-1 .details-1{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .two .shirt-one .info-1 .details-1 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .two .shirt-one .info-1 .details-1 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .two .shirt-one .info-1 .details-1 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .two .shirt-one .info-1 .details-1 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .two .shirt-one .info-1 .details-1 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .two .shirt-one .info-1 .details-1 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .two .shirt-one .info-1 .shop-button-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .two .shirt-one .info-1 .shop-button-1 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .two .shirt-two{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .two .shirt-two .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(15, 159, 102);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .two .shirt-two .image-container{
+    perspective: 1000px;
+}
+
+.products .two .shirt-two .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .two .shirt-two .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-two .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-two .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-two .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .two .shirt-two .front{
+    z-index: 2;
+}
+
+.products .two .shirt-two .back{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-two .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .two .shirt-two .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .two .shirt-two .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .two .shirt-two .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .two .shirt-two .info-2{
+    display: flex;
+}
+
+.products .two .info-2 .details-2{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .two .shirt-two .info-2 .details-2 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .two .shirt-two .info-2 .details-2 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .two .shirt-two .info-2 .details-2 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .two .shirt-two .info-2 .details-2 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .two .shirt-two .info-2 .details-2 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .two .shirt-two .info-2 .details-2 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .two .shirt-two .info-2 .shop-button-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .two .shirt-two .info-2 .shop-button-2 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+
+.products .two .shirt-three{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .two .shirt-three .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(233, 189, 150);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .two .shirt-three .image-container{
+    perspective: 1000px;
+}
+
+.products .two .shirt-three .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .two .shirt-three .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-three .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-three .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-three .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .two .shirt-three .front{
+    z-index: 2;
+}
+
+.products .two .shirt-three .back{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-three .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .two .shirt-three .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .two .shirt-three .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .two .shirt-three .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .two .shirt-three .info-3{
+    display: flex;
+}
+
+.products .two .shirt-three .info-3 .details-3{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .two  .shirt-three .info-3 .details-3 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .two .shirt-three .info-3 .details-3 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .two .shirt-three .info-3 .details-3 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .two .shirt-three .info-3 .details-3 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .two .shirt-three .info-3 .details-3 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .two .shirt-three .info-3 .details-3 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .two .shirt-three .info-3 .shop-button-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .two .shirt-three .info-3 .shop-button-3 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .three{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-left: 5px;
+}
+
+.products .three .shirt-one{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .three .shirt-one .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(230, 101, 123);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .three .shirt-one .image-container{
+    perspective: 1000px;
+}
+
+.products .three .shirt-one .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .three .shirt-one .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .three .shirt-one .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .three .shirt-one .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .three .shirt-one .front,.back{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+} 
+
+.products .three .shirt-one .front{
+    z-index: 2;
+}
+
+.products .three .shirt-one .back{
+    transform: rotateY(180deg);
+    
+}
+
+.products .three .shirt-one .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .three .shirt-one .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .three .shirt-one .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .three .shirt-one .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+
+.products .three .shirt-one .info-1{
+    display: flex;
+}
+
+.products .three .shirt-one .info-1 .details-1{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .three .shirt-one .info-1 .details-1 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .three .shirt-one .info-1 .details-1 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .three .shirt-one .info-1 .details-1 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .three .shirt-one .info-1 .details-1 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .three .shirt-one .info-1 .details-1 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .three .shirt-one .info-1 .details-1 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .three .shirt-one .info-1 .shop-button-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .three .shirt-one .info-1 .shop-button-1 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .three .shirt-two{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .three .shirt-two .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(15, 159, 102);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .three .shirt-two .image-container{
+    perspective: 1000px;
+}
+
+.products .three .shirt-two .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .three .shirt-two .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .three .shirt-two .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .three .shirt-two .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .three .shirt-two .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .three .shirt-two .front{
+    z-index: 2;
+}
+
+.products .three .shirt-two .back{
+    transform: rotateY(180deg);
+}
+
+.products .three .shirt-two .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .three .shirt-two .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .three .shirt-two .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .three .shirt-two .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .three .shirt-two .info-2{
+    display: flex;
+}
+
+.products .three .info-2 .details-2{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .three .shirt-two .info-2 .details-2 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .three .shirt-two .info-2 .details-2 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .three .shirt-two .info-2 .details-2 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .three .shirt-two .info-2 .details-2 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .three .shirt-two .info-2 .details-2 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .three .shirt-two .info-2 .details-2 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .three .shirt-two .info-2 .shop-button-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .three .shirt-two .info-2 .shop-button-2 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.deals-box{
+    width: 85%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    padding-top: 50px;
+    gap: 80px;
+}
+
+.deals-box .deal-1{
+    height: 400px;
+    width: 600px;
+    background-image: url(../Assets/img/deals-1.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+
+.deals-box .deal-2{
+    height: 400px;
+    width: 600px;
+    background-image: url(../Assets/img/deals-2.png);
+    background-position: center;
+    background-size: 1200px;
+}
+
+.deals-box .deal-1 .text{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.deals-box .deal-1 .text #para-1{
+    font-size: x-large;
+    color: rgb(15, 159, 102);
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.deals-box .deal-1 .text #para-2{
+    margin-top: 8px;
+    color: rgb(102, 100, 100);
+}
+
+.deals-box .deal-1 .text #para-3{
+    font-size:larger;
+}
+
+.deals-box .deal-1 .text #para-4{
+    font-size: large;
+    color: red;
+    font-weight: bold;
+}
+
+.deals-box .deal-1 .text #para-4 span{
+    text-decoration: line-through;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+.deals-box .deal-1 .text #para-5{
+    color: rgb(102, 100, 100);
+    margin-bottom: 0px;
+}
+
+.deals-box .deal-1 .countdown{
+    display: flex;
+    gap: 20px;
+}
+
+.deals-box .deal-1 .text .countdown .days .p-1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 159, 102);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.deals-box .deal-1 .text .countdown .days .p-2{
+    margin-top: 5px;    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.deals-box .deal-1 .text .countdown .Hours .p-1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 159, 102);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.deals-box .deal-1 .text .countdown .Hours .p-2{
+    margin-top: 5px;    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.deals-box .deal-1 .text .countdown .minutes .p-1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 159, 102);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.deals-box .deal-1 .text .countdown .minutes .p-2{
+    margin-top: 5px;    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.deals-box .deal-1 .text .countdown .sec .p-1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 159, 102);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.deals-box .deal-1 .text .countdown .sec .p-2{
+    margin-top: 5px;    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.deals-box .deal-1 .text .countdown .colon-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 69px;
+}
+
+.deals-box .deal-1 .text .countdown .colon-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 69px;
+}
+
+.deals-box .deal-1 .text .countdown .colon-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 69px;
+}
+
+.deals-box .deal-1 .text button{
+    padding: 10px;
+    border: 2px solid rgb(15, 159, 102);
+    border-radius: 5px;
+    background: none;
+}
+
+.deals-box .deal-2 .text{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.deals-box .deal-2 .text #para-1{
+    font-size: x-large;
+    color: rgb(15, 159, 102);
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.deals-box .deal-2 .text #para-2{
+    margin-top: 8px;
+    color: rgb(102, 100, 100);
+}
+
+.deals-box .deal-2 .text #para-3{
+    font-size:larger;
+}
+
+.deals-box .deal-2 .text #para-4{
+    font-size: large;
+    color: red;
+    font-weight: bold;
+}
+
+.deals-box .deal-2 .text #para-4 span{
+    text-decoration: line-through;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+.deals-box .deal-2 .text #para-5{
+    color: rgb(102, 100, 100);
+    margin-bottom: 0px;
+}
+
+.deals-box .deal-2 .countdown{
+    display: flex;
+    gap: 20px;
+}
+
+.deals-box .deal-2 .text .countdown .days .p-1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 159, 102);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.deals-box .deal-2 .text .countdown .days .p-2{
+    margin-top: 5px;    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.deals-box .deal-2 .text .countdown .Hours .p-1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 159, 102);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.deals-box .deal-2 .text .countdown .Hours .p-2{
+    margin-top: 5px;    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.deals-box .deal-2 .text .countdown .minutes .p-1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 159, 102);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.deals-box .deal-2 .text .countdown .minutes .p-2{
+    margin-top: 5px;    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.deals-box .deal-2 .text .countdown .sec .p-1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 159, 102);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.deals-box .deal-2 .text .countdown .sec .p-2{
+    margin-top: 5px;    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.deals-box .deal-2 .text .countdown .colon-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 69px;
+}
+
+.deals-box .deal-2 .text .countdown .colon-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 69px;
+}
+
+.deals-box .deal-2 .text .countdown .colon-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 69px;
+}
+
+.deals-box .deal-2 .text button{
+    padding: 10px;
+    border: 2px solid rgb(15, 159, 102);
+    border-radius: 5px;
+    background: none;
+}
+
+.new-arrivals{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-arrivals .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new-arrivals .top h2{
+    color: rgb(15, 159, 102);
+}
+.new-arrivals .top h2 span{
+    color: black;
+}
+
+.new-arrivals .top .buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.new-arrivals .top button{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(15, 159, 102);
+    background-color: rgb(236, 234, 234);
+    color: rgb(15, 159, 102);
+}
+
+.new-arrivals .one{
+    display: flex;
+    gap: 20px;
+}
+
+.new-arrivals .one .item-1{
+    width: 24%;
+    height: 420px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.new-arrivals .one .item-1 .image-container{
+    width: 90%;
+    padding: 10px;
+    margin:auto;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom:5px ;
+}
+.new-arrivals .one .item-1 .image-container img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.new-arrivals .one .item-1 .details-1{
+    display: flex;
+    margin-left: 30px;
+}
+
+.new-arrivals .one .item-1 .details-1 .info-1{
+    width: 210px;
+}
+
+.new-arrivals .one .item-1 .details-1 .info-1 #p-1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(102, 100, 100);
+    font-size: small;
+}
+
+.new-arrivals .one .item-1 .details-1 .info-1 #p-2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size:larger;
+}
+.new-arrivals .one .item-1 .details-1 .info-1 #p-3{
+    margin-top: 0px;
+    color: rgb(222, 207, 3);
+}
+
+.new-arrivals .one .item-1 .details-1 .info-1 #p-4{
+    margin-bottom: 0px;
+    font-size: large;
+    color: rgb(15, 159, 102);
+    font-weight: bold;
+}
+.new-arrivals .one .item-1 .details-1 .info-1 #p-4 span{
+    font-size: medium;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.new-arrivals .one .item-1 .details-1 .shopping-button{
+    width: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.new-arrivals .one .item-1 .details-1 .shopping-button i{
+    padding: 15px;
+    border: 1px solid rgb(110, 231, 183);
+    background-color: rgb(214, 236, 228);
+    border-radius: 50%;
+}
+
+.new-arrivals .one .item-1 .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(234, 140, 155);
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.new-arrivals .one .item-1 .Hot p{
+    font-size: small;
+}
+
+.new-arrivals .one .item-2{
+    width: 24%;
+    height: 420px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.new-arrivals .one .item-2 .image-container{
+    width: 90%;
+    padding: 10px;
+    margin:auto;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom:5px ;
+}
+.new-arrivals .one .item-2 .image-container img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.new-arrivals .one .item-2 .details-1{
+    display: flex;
+    margin-left: 30px;
+}
+
+.new-arrivals .one .item-2 .details-1 .info-1{
+    width: 210px;
+}
+
+.new-arrivals .one .item-2 .details-1 .info-1 #p-1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(102, 100, 100);
+    font-size: small;
+}
+
+.new-arrivals .one .item-2 .details-1 .info-1 #p-2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size:larger;
+}
+.new-arrivals .one .item-2 .details-1 .info-1 #p-3{
+    margin-top: 0px;
+    color: rgb(222, 207, 3);
+}
+
+.new-arrivals .one .item-2 .details-1 .info-1 #p-4{
+    margin-bottom: 0px;
+    font-size: large;
+    color: rgb(15, 159, 102);
+    font-weight: bold;
+}
+.new-arrivals .one .item-2 .details-1 .info-1 #p-4 span{
+    font-size: medium;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.new-arrivals .one .item-2 .details-1 .shopping-button{
+    width: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.new-arrivals .one .item-2 .details-1 .shopping-button i{
+    padding: 15px;
+    border: 1px solid rgb(110, 231, 183);
+    background-color: rgb(214, 236, 228);
+    border-radius: 50%;
+}
+
+.new-arrivals .one .item-2 .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(165, 206, 165);
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.new-arrivals .one .item-2 .Hot p{
+    font-size: small;
+}
+
+.new-arrivals .one .item-3{
+    width: 24%;
+    height: 420px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.new-arrivals .one .item-3 .image-container{
+    width: 90%;
+    padding: 10px;
+    margin:auto;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom:5px ;
+}
+.new-arrivals .one .item-3 .image-container img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.new-arrivals .one .item-3 .details-1{
+    display: flex;
+    margin-left: 30px;
+}
+
+.new-arrivals .one .item-3 .details-1 .info-1{
+    width: 210px;
+}
+
+.new-arrivals .one .item-3 .details-1 .info-1 #p-1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(102, 100, 100);
+    font-size: small;
+}
+
+.new-arrivals .one .item-3 .details-1 .info-1 #p-2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size:larger;
+}
+.new-arrivals .one .item-3 .details-1 .info-1 #p-3{
+    margin-top: 0px;
+    color: rgb(222, 207, 3);
+}
+
+.new-arrivals .one .item-3 .details-1 .info-1 #p-4{
+    margin-bottom: 0px;
+    font-size: large;
+    color: rgb(15, 159, 102);
+    font-weight: bold;
+}
+.new-arrivals .one .item-3 .details-1 .info-1 #p-4 span{
+    font-size: medium;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.new-arrivals .one .item-3 .details-1 .shopping-button{
+    width: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.new-arrivals .one .item-3 .details-1 .shopping-button i{
+    padding: 15px;
+    border: 1px solid rgb(110, 231, 183);
+    background-color: rgb(214, 236, 228);
+    border-radius: 50%;
+}
+
+.new-arrivals .one .item-3 .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(230, 179, 128);
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.new-arrivals .one .item-3 .Hot p{
+    font-size: small;
+}
+
+.new-arrivals .one .item-4{
+    width: 24%;
+    height: 420px;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.new-arrivals .one .item-4 .image-container{
+    width: 90%;
+    padding: 10px;
+    margin:auto;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom:5px ;
+}
+.new-arrivals .one .item-4 .image-container img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.new-arrivals .one .item-4 .details-1{
+    display: flex;
+    margin-left: 30px;
+}
+
+.new-arrivals .one .item-4 .details-1 .info-1{
+    width: 210px;
+}
+
+.new-arrivals .one .item-4 .details-1 .info-1 #p-1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(102, 100, 100);
+    font-size: small;
+}
+
+.new-arrivals .one .item-4 .details-1 .info-1 #p-2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size:larger;
+}
+.new-arrivals .one .item-4 .details-1 .info-1 #p-3{
+    margin-top: 0px;
+    color: rgb(222, 207, 3);
+}
+
+.new-arrivals .one .item-4 .details-1 .info-1 #p-4{
+    margin-bottom: 0px;
+    font-size: large;
+    color: rgb(15, 159, 102);
+    font-weight: bold;
+}
+.new-arrivals .one .item-4 .details-1 .info-1 #p-4 span{
+    font-size: medium;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.new-arrivals .one .item-4 .details-1 .shopping-button{
+    width: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.new-arrivals .one .item-4 .details-1 .shopping-button i{
+    padding: 15px;
+    border: 1px solid rgb(110, 231, 183);
+    background-color: rgb(214, 236, 228);
+    border-radius: 50%;
+}
+
+.new-arrivals .one .item-4 .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: lightblue;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.new-arrivals .one .item-4 .Hot p{
+    font-size: small;
+}
+
+.variations{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.variations .one{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .Hot-releases{
+    width: 34%;
+    height: 400px;
+}
+
+.variations .one .Hot-releases .line-1{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.variations .one .Hot-releases .line-1 .sub-line-1{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(15, 159, 102);
+}
+
+.variations .one .Hot-releases .line-1 .sub-line-2{
+    height: 55%;
+    width: 90%;
+    background-color: rgb(197, 197, 197);
+}
+
+.variations .one .Hot-releases .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.variations .one .Hot-releases .items-1 .item-1{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .Hot-releases .items-1 .item-1 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .Hot-releases .items-1 .item-1 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .Hot-releases .items-1 .item-1 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Hot-releases .items-1 .item-1 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .Hot-releases .items-1 .item-1 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .Hot-releases .items-1 .item-1 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .one .Hot-releases .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Hot-releases .items-1 .item-2{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .Hot-releases .items-1 .item-2 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .Hot-releases .items-1 .item-2 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .Hot-releases .items-1 .item-2 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Hot-releases .items-1 .item-2 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .Hot-releases .items-1 .item-2 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .Hot-releases .items-1 .item-2 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .one .Hot-releases .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Hot-releases .items-1 .item-3{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .Hot-releases .items-1 .item-3 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .Hot-releases .items-1 .item-3 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .Hot-releases .items-1 .item-3 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Hot-releases .items-1 .item-3 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .Hot-releases .items-1 .item-3 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .Hot-releases .items-1 .item-3 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .one .Deals-Outlet{
+    width: 34%;
+    height: 400px;
+}
+
+.variations .one .Deals-Outlet .line-2{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.variations .one .Deals-Outlet .line-2 .sub-line-1{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(15, 159, 102);
+}
+
+.variations .one .Deals-Outlet .line-2 .sub-line-2{
+    height: 55%;
+    width: 90%;
+    background-color: rgb(197, 197, 197);
+}
+
+.variations .one .Deals-Outlet .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-1{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-1 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-1 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-1 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-1 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-1 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .Deals-Outlet .items-1 .item-1 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .one .Deals-Outlet .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-2{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-2 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-2 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-2 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-2 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-2 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .Deals-Outlet .items-1 .item-2 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .one .Deals-Outlet .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-3{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-3 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-3 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-3 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-3 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .Deals-Outlet .items-1 .item-3 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .Deals-Outlet .items-1 .item-3 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .one .top-selling{
+    width: 34%;
+    height: 400px;
+}
+
+.variations .one .top-selling .line-3{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.variations .one .top-selling .line-3 .sub-line-1{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(15, 159, 102);
+}
+
+.variations .one .top-selling .line-3 .sub-line-2{
+    height: 55%;
+    width: 90%;
+    background-color: rgb(197, 197, 197);
+}
+
+.variations .one .top-selling .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.variations .one .top-selling .items-1 .item-1{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .top-selling .items-1 .item-1 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .top-selling .items-1 .item-1 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .top-selling .items-1 .item-1 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .top-selling .items-1 .item-1 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .top-selling .items-1 .item-1 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .top-selling .items-1 .item-1 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .one .top-selling .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .top-selling .items-1 .item-2{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .top-selling .items-1 .item-2 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .top-selling .items-1 .item-2 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .top-selling .items-1 .item-2 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .top-selling .items-1 .item-2 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .top-selling .items-1 .item-2 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .top-selling .items-1 .item-2 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .one .top-selling .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .top-selling .items-1 .item-3{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .one .top-selling .items-1 .item-3 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .one .top-selling .items-1 .item-3 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .one .top-selling .items-1 .item-3 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .one .top-selling .items-1 .item-3 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .one .top-selling .items-1 .item-3 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .one .top-selling .items-1 .item-3 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .two{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.variations .two .trendy{
+    width: 34%;
+    height: 400px;
+}
+
+.variations .two .trendy .line-1{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.variations .two .trendy .line-1 .sub-line-1{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(15, 159, 102);
+}
+
+.variations .two .trendy .line-1 .sub-line-2{
+    height: 55%;
+    width: 90%;
+    background-color: rgb(197, 197, 197);
+}
+
+.variations .two .trendy .items-1 .item-3{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+
+.variations .two .trendy .items-1 .item-3 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .two .trendy .items-1 .item-3 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .two .trendy .items-1 .item-3 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .two .trendy .items-1 .item-3 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .two .trendy .items-1 .item-3 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .two .trendy .items-1 .item-3 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+
+.variations .two .trendy .items-1 .item-2{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .two .trendy .items-1 .item-2 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .two .trendy .items-1 .item-2 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .two .trendy .items-1 .item-2 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .two .trendy .items-1 .item-2 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .two .trendy .items-1 .item-2 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .two .trendy .items-1 .item-2 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.variations .two .trendy .items-1{
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.variations .two .trendy .items-1 .item-1{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.variations .two .trendy .items-1 .item-1 .image-container{
+    width: 30%;
+    height: 100%;
+}
+
+.variations .two .trendy .items-1 .item-1 .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.variations .two .trendy .items-1 .item-1 .details{
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variations .two .trendy .items-1 .item-1 .details #p-1{
+    margin-bottom: 0px;
+}
+
+.variations .two .trendy .items-1 .item-1 .details #p-2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(15, 159, 102);
+}
+
+.variations .two .trendy .items-1 .item-1 .details #p-2 span{
+    font-size: medium;
+    text-decoration: line-through;
+    font-weight: 100;
+    color: rgb(102, 100, 100);
+    margin-left: 5px;
+}
+
+.Newsletter{
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+}
+
+.Newsletter .sign-in{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 100px;
+}
+
+.Newsletter .sign-in #p-1{
+    font-size: xx-large;
+}
+
+.Newsletter .sign-in #p-2{
+    font-size: larger;
+}
+
+.Newsletter .text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.Newsletter .text p{
+    font-size: larger;
+}
+
+.Newsletter .text .input{
+    display: flex;
+}
+
+.Newsletter .text .input input{
+    height: 40px;
+    width: 290px;
+    border: none;
+    border-radius: 5px;
+}
+
+.Newsletter .text .input button{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+footer{
+    width: 85%;
+    margin:auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+footer .achivers-it{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .achivers-it .row-1{
+    width: 35%;
+    height: 100%;
+    margin-top: 3px;
+}
+
+footer .achivers-it .row-1 img{
+    width: 160px;
+    height: 50px;
+}
+
+footer .achivers-it .row-1 #p-1{
+    font-size: 20px;
+    color: rgb(102, 100, 100);
+}
+
+footer .achivers-it .row-1 #p-2,#p-3,#p-4,#p-5{
+    font-size: 20px;
+    color: rgb(102, 100, 100);
+}
+
+footer .achivers-it .row-1 .icons img{
+    width: 30px;
+    height: 30px;
+}
+
+footer .achivers-it .row-2{
+    margin-top: 40px;
+}
+
+footer .achivers-it .row-2 #p-1{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+footer .achivers-it .row-2 #p-2{
+    font-size: large;
+}
+
+footer .achivers-it .row-2 #p-3{
+    font-size: large;
+    color: black;
+}
+
+footer .achivers-it .row-2 #p-4{
+    font-size: large;
+    color: black;
+}
+
+footer .achivers-it .row-2 #p-5{
+    font-size: large;
+    color: black;
+}
+
+footer .achivers-it .row-2 #p-6{
+    font-size: large;
+    color: black;
+}
+
+footer .achivers-it .row-2 #p-7{
+    font-size: large;
+}
+
+footer .achivers-it .row-3{
+    margin-top: 40px;
+}
+
+footer .achivers-it .row-3 #p-1{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+footer .achivers-it .row-3 #p-2{
+    font-size: large;
+}
+
+footer .achivers-it .row-3 #p-3{
+    font-size: large;
+    color: black;
+}
+
+footer .achivers-it .row-3 #p-4{
+    font-size: large;
+    color: black;
+}
+
+footer .achivers-it .row-3 #p-5{
+    font-size: large;
+    color: black;
+}
+
+footer .achivers-it .row-3 #p-6{
+    font-size: large;
+    color: black;
+}
+
+footer .achivers-it .row-3 #p-7{
+    font-size: large;
+}
+
+footer .achivers-it .row-4{
+    margin-top: 40px;
+}
+
+footer .achivers-it .row-4 p{
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+}
+
+footer .developer{
+    width: 100%;
+    height:100px;
+    border-top: 1px solid rgb(199, 197, 197);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .developer .rights{
+    font-size: large;
+    color: rgb(102, 100, 100);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .developer .designer{
+    font-size: large;
+    color: rgb(102, 100, 100);
+    margin-bottom: 20px;
+}
