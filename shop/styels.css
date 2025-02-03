@@ -133,6 +133,1423 @@ nav a:hover{
     padding: 15px;
 }
 
+.shop_indcation{
+    display: flex;
+    align-items: center;
+    column-gap: 1%;
+    background-color: rgb(229, 229, 229);
+    padding: 1% 0% 1% 8%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.shop_indcation a,i{
+    text-decoration: none;
+    color: gray;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products .one{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 40px;
+}
+
+.products .one .shirt-one{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .one .shirt-one .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(230, 101, 123);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .one .shirt-one .image-container{
+    perspective: 1000px;
+}
+
+.products .one .shirt-one .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .one .shirt-one .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-one .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-one .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-one .front,.back{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+} 
+
+.products .one .shirt-one .front{
+    z-index: 2;
+}
+
+.products .one .shirt-one .back{
+    transform: rotateY(180deg);
+    
+}
+
+.products .one .shirt-one .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .one .shirt-one .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .one .shirt-one .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .one .shirt-one .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+
+.products .one .shirt-one .info-1{
+    display: flex;
+}
+
+.products .one .shirt-one .info-1 .details-1{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .one .shirt-one .info-1 .details-1 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .one .shirt-one .info-1 .details-1 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .one .shirt-one .info-1 .details-1 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .one .shirt-one .info-1 .details-1 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .one .shirt-one .info-1 .details-1 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .one .shirt-one .info-1 .details-1 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .one .shirt-one .info-1 .shop-button-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .one .shirt-one .info-1 .shop-button-1 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .one .shirt-two{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .one .shirt-two .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(15, 159, 102);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .one .shirt-two .image-container{
+    perspective: 1000px;
+}
+
+.products .one .shirt-two .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .one .shirt-two .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-two .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-two .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-two .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .one .shirt-two .front{
+    z-index: 2;
+}
+
+.products .one .shirt-two .back{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-two .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .one .shirt-two .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .one .shirt-two .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .one .shirt-two .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .one .shirt-two .info-2{
+    display: flex;
+}
+
+.products .one .info-2 .details-2{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .one .shirt-two .info-2 .details-2 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .one .shirt-two .info-2 .details-2 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .one .shirt-two .info-2 .details-2 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .one .shirt-two .info-2 .details-2 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .one .shirt-two .info-2 .details-2 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .one .shirt-two .info-2 .details-2 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .one .shirt-two .info-2 .shop-button-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .one .shirt-two .info-2 .shop-button-2 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+
+.products .one .shirt-three{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .one .shirt-three .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(233, 189, 150);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .one .shirt-three .image-container{
+    perspective: 1000px;
+}
+
+.products .one .shirt-three .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .one .shirt-three .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-three .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-three .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .one .shirt-three .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .one .shirt-three .front{
+    z-index: 2;
+}
+
+.products .one .shirt-three .back{
+    transform: rotateY(180deg);
+}
+
+.products .one .shirt-three .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .one .shirt-three .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .one .shirt-three .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .one .shirt-three .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .one .shirt-three .info-3{
+    display: flex;
+}
+
+.products .one .shirt-three .info-3 .details-3{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .one  .shirt-three .info-3 .details-3 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .one .shirt-three .info-3 .details-3 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .one .shirt-three .info-3 .details-3 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .one .shirt-three .info-3 .details-3 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .one .shirt-three .info-3 .details-3 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .one .shirt-three .info-3 .details-3 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .one .shirt-three .info-3 .shop-button-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .one .shirt-three .info-3 .shop-button-3 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .two{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 40px;
+}
+
+.products .two .shirt-one{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .two .shirt-one .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(230, 101, 123);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .two .shirt-one .image-container{
+    perspective: 1000px;
+}
+
+.products .two .shirt-one .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .two .shirt-one .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-one .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-one .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-one .front,.back{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+} 
+
+.products .two .shirt-one .front{
+    z-index: 2;
+}
+
+.products .two .shirt-one .back{
+    transform: rotateY(180deg);
+    
+}
+
+.products .two .shirt-one .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .two .shirt-one .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .two .shirt-one .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .two .shirt-one .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+
+.products .two .shirt-one .info-1{
+    display: flex;
+}
+
+.products .two .shirt-one .info-1 .details-1{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .two .shirt-one .info-1 .details-1 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .two .shirt-one .info-1 .details-1 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .two .shirt-one .info-1 .details-1 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .two .shirt-one .info-1 .details-1 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .two .shirt-one .info-1 .details-1 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .two .shirt-one .info-1 .details-1 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .two .shirt-one .info-1 .shop-button-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .two .shirt-one .info-1 .shop-button-1 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .two .shirt-two{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .two .shirt-two .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(15, 159, 102);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .two .shirt-two .image-container{
+    perspective: 1000px;
+}
+
+.products .two .shirt-two .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .two .shirt-two .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-two .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-two .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-two .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .two .shirt-two .front{
+    z-index: 2;
+}
+
+.products .two .shirt-two .back{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-two .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .two .shirt-two .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .two .shirt-two .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .two .shirt-two .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .two .shirt-two .info-2{
+    display: flex;
+}
+
+.products .two .info-2 .details-2{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .two .shirt-two .info-2 .details-2 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .two .shirt-two .info-2 .details-2 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .two .shirt-two .info-2 .details-2 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .two .shirt-two .info-2 .details-2 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .two .shirt-two .info-2 .details-2 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .two .shirt-two .info-2 .details-2 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .two .shirt-two .info-2 .shop-button-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .two .shirt-two .info-2 .shop-button-2 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+
+.products .two .shirt-three{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .two .shirt-three .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(233, 189, 150);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .two .shirt-three .image-container{
+    perspective: 1000px;
+}
+
+.products .two .shirt-three .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .two .shirt-three .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-three .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-three .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .two .shirt-three .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .two .shirt-three .front{
+    z-index: 2;
+}
+
+.products .two .shirt-three .back{
+    transform: rotateY(180deg);
+}
+
+.products .two .shirt-three .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .two .shirt-three .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .two .shirt-three .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .two .shirt-three .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .two .shirt-three .info-3{
+    display: flex;
+}
+
+.products .two .shirt-three .info-3 .details-3{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .two  .shirt-three .info-3 .details-3 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .two .shirt-three .info-3 .details-3 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .two .shirt-three .info-3 .details-3 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .two .shirt-three .info-3 .details-3 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .two .shirt-three .info-3 .details-3 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .two .shirt-three .info-3 .details-3 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .two .shirt-three .info-3 .shop-button-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .two .shirt-three .info-3 .shop-button-3 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .three{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-left: 120px;
+}
+
+.products .three .shirt-one{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .three .shirt-one .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(230, 101, 123);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .three .shirt-one .image-container{
+    perspective: 1000px;
+}
+
+.products .three .shirt-one .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .three .shirt-one .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .three .shirt-one .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .three .shirt-one .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .three .shirt-one .front,.back{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+} 
+
+.products .three .shirt-one .front{
+    z-index: 2;
+}
+
+.products .three .shirt-one .back{
+    transform: rotateY(180deg);
+    
+}
+
+.products .three .shirt-one .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .three .shirt-one .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .three .shirt-one .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .three .shirt-one .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+
+.products .three .shirt-one .info-1{
+    display: flex;
+}
+
+.products .three .shirt-one .info-1 .details-1{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .three .shirt-one .info-1 .details-1 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .three .shirt-one .info-1 .details-1 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .three .shirt-one .info-1 .details-1 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .three .shirt-one .info-1 .details-1 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .three .shirt-one .info-1 .details-1 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .three .shirt-one .info-1 .details-1 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .three .shirt-one .info-1 .shop-button-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .three .shirt-one .info-1 .shop-button-1 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
+.products .three .shirt-two{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(110, 231, 183);
+    border-radius: 15px;
+    position: relative;
+}
+
+.products .three .shirt-two .Hot{
+    height: 20px;
+    width: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(15, 159, 102);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.products .three .shirt-two .image-container{
+    perspective: 1000px;
+}
+
+.products .three .shirt-two .image-container .image-box{
+    width: 360px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.products .three .shirt-two .image-container:hover .image-box{
+    transform: rotateY(180deg);
+}
+
+.products .three .shirt-two .front img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .three .shirt-two .back img{
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+}
+
+.products .three .shirt-two .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.products .three .shirt-two .front{
+    z-index: 2;
+}
+
+.products .three .shirt-two .back{
+    transform: rotateY(180deg);
+}
+
+.products .three .shirt-two .back .icon-container{
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products .three .shirt-two .back .icon-name{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .three .shirt-two .back .icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.products .three .shirt-two .back .icon-container:hover .icon-name{
+    opacity: 1;
+}
+
+.products .three .shirt-two .info-2{
+    display: flex;
+}
+
+.products .three .info-2 .details-2{
+    width: 85%;
+    margin-left: 20px;
+}
+
+.products .three .shirt-two .info-2 .details-2 #p-1,#p-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.products .three .shirt-two .info-2 .details-2 #h-1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.products .three .shirt-two .info-2 .details-2 #p-1{
+    color: rgb(132, 130, 130);
+    font-size: small;
+}
+
+.products .three .shirt-two .info-2 .details-2 #p-2{
+    margin-top: 5px;
+    margin-bottom:0px;
+    color: rgb(222, 207, 3);
+}
+
+.products .three .shirt-two .info-2 .details-2 #h-2{
+    margin-top: 5px;
+    color: rgb(15, 159, 102);
+    font-size: large;
+}
+
+.products .three .shirt-two .info-2 .details-2 #h-2 span{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(132, 130, 130);
+}
+
+.products .three .shirt-two .info-2 .shop-button-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 115px;
+    width: 60px;
+}
+
+.products .three .shirt-two .info-2 .shop-button-2 button{
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(214, 236, 228);
+}
+
 .Newsletter{
     margin-top: 30px;
     width: 100%;

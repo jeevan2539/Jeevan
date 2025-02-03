@@ -133,6 +133,62 @@ nav a:hover{
     padding: 15px;
 }
 
+.shop_indcation{
+    display: flex;
+    align-items: center;
+    column-gap: 1%;
+    background-color: rgb(229, 229, 229);
+    padding: 1% 0% 1% 8%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.shop_indcation a,i{
+    text-decoration: none;
+    color: gray;
+}
+
+
+/* my_account */
+.my_account{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.my_account_table{
+    width: 20%;
+}
+.my_account_table_content{
+    width: 70%;  
+}
+.my_account_table_content td{
+    padding: 7%;
+}
+#dashboard{
+    display: flex;
+    align-items: center;
+    column-gap: 5%;
+}
+#dashboard i{
+    color:black;
+}
+.dash{
+    color: white;
+    background-color:rgb(15, 96, 4) ;
+}
+.my_content{
+    border: 1px solid gray;
+    width: 60%;
+    height: 20%;
+}
+.my_content h3{
+    background-color: rgb(208, 207, 207);
+    padding: 1%;
+    margin: 0%;
+}
+.my_content p{
+    margin: 1% 2%;
+}
+
 .Newsletter{
     margin-top: 30px;
     width: 100%;
